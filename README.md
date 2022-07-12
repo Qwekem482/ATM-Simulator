@@ -1,1 +1,2 @@
-# ATM Simulator
+## ATM Simulator
+A simple C# project (unfinished)
