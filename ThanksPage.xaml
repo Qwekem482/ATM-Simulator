@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="ATM_Simulator.ThanksPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ATM_Simulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/711A75toF6F6F6.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="bankName" TextWrapping="Wrap" Text="Qwekembank" FontSize="50" FontWeight="Bold" FontFamily="Segoe UI" Margin="39,32,908,623"/>
+        <TextBlock x:Name="slogan" TextWrapping="Wrap" Text="For you, and for us" FontSize="36" FontWeight="Bold" FontFamily="Segoe Script" Margin="159,99,729,556"/>
+        <TextBlock x:Name="thanks1Label" TextWrapping="Wrap" Text="Thanks for using our ATM" FontWeight="Bold" FontSize="30" FocusVisualPrimaryBrush="#FFFFDF00" Foreground="#FFFFDD43" Margin="443,233,438,439" FontFamily="Segoe Print"/>
+        <TextBlock x:Name="thank2Label" TextWrapping="Wrap" Text="Please receive the money" FontWeight="Bold" FontSize="30" FocusVisualPrimaryBrush="#FFFFDF00" Foreground="#FFFFDD43" Margin="452,307,448,365" FontFamily="Segoe Print"/>
+        <TextBlock x:Name="thanks3Label" TextWrapping="Wrap" Text="See you soon" FontWeight="Bold" FontSize="30" FocusVisualPrimaryBrush="#FFFFDF00" Foreground="#FFFFDD43" Margin="543,386,540,286" FontFamily="Segoe Print"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1140,701,0,0" TextWrapping="Wrap" Text="ATM Simulator v1.0.0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Page>

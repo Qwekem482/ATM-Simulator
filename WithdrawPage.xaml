@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="ATM_Simulator.WithdrawPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ATM_Simulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/711A75toF6F6F6.png"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="1140,701,0,0" TextWrapping="Wrap" Text="ATM Simulator v1.0.0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="bankName" TextWrapping="Wrap" Text="Qwekembank" FontSize="50" FontWeight="Bold" FontFamily="Segoe UI" Margin="39,32,908,623"/>
+        <TextBlock x:Name="slogan" TextWrapping="Wrap" Text="For you, and for us" FontSize="36" FontWeight="Bold" FontFamily="Segoe Script" Margin="159,99,729,556"/>
+        <TextBlock x:Name="withdrawLabel" TextWrapping="Wrap" Text="How much will you withdraw?" FontWeight="Bold" FontSize="28" FocusVisualPrimaryBrush="#FFFFDF00" Foreground="#FFFFDF00" Margin="0,211,7,469" TextAlignment="Center"/>
+        <TextBox x:Name="moneyBox" TextWrapping="Wrap" TextAlignment="Center" PlaceholderText="" Height="49" FontSize="24" Margin="448,365,447,306"/>
+        <TextBlock x:Name="multipleLabel" TextWrapping="Wrap" FontWeight="Normal" FontSize="20" FocusVisualPrimaryBrush="#FFFFDF00" Foreground="#FFFFDF00" Margin="0,263,0,417" Text="The money must be multiple of XXX" TextDecorations="Underline" FontFamily="Segoe Print" HorizontalAlignment="Center" Width="1259" TextAlignment="Center"/>
+        <Button x:Name="confirmButton" Content="Confirm" Width="160" FocusVisualPrimaryBrush="#FFFFDF00" Background="#FF7857B6" Foreground="#FFFFDF00" FontWeight="Bold" Height="49" FontSize="20" Margin="0,447,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="confirmButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit" Width="160" FocusVisualPrimaryBrush="#FFFFDF00" Background="#FF7857B6" Foreground="#FFFFDF00" FontWeight="Bold" Height="49" FontSize="20" Margin="0,648,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="exitButton_Click"/>
+        <TextBlock x:Name="wrongBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Insufficient amount" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Foreground="#FFB50404" Margin="0,317,0,0" Width="1260" TextAlignment="Center"/>
+        <TextBlock x:Name="denominations" HorizontalAlignment="Center" Margin="0,298,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FFFFDF00" FontSize="24" FontWeight="Bold" Width="520" Height="342" TextAlignment="Center"/>
+    </Grid>
+</Page>

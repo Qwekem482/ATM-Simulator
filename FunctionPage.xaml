@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="ATM_Simulator.FunctionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ATM_Simulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/711A75toF6F6F6.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="bankName" TextWrapping="Wrap" Text="Qwekembank" FontSize="50" FontWeight="Bold" FontFamily="Segoe UI" Margin="39,32,908,623" Foreground="White"/>
+        <TextBlock x:Name="slogan" TextWrapping="Wrap" Text="For you, and for us" FontSize="36" FontWeight="Bold" FontFamily="Segoe Script" Margin="159,99,729,556" Foreground="White"/>
+        <Button x:Name="withdrawButton" Content="Withdraw" Width="160" FocusVisualPrimaryBrush="#FFFFDF00" Background="#FF7857B6" Foreground="#FFFFDF00" FontWeight="Bold" Height="160" FontSize="20" Margin="396,300,0,0" VerticalAlignment="Top" Click="withdrawButton_Click"/>
+        <Button x:Name="historyButton" Content="History" Width="160" FocusVisualPrimaryBrush="#FFFFDF00" Background="#FF7857B6" Foreground="#FFFFDF00" FontWeight="Bold" Height="160" FontSize="20" Margin="723,300,0,0" VerticalAlignment="Top" Click="historyButton_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1140,701,0,0" TextWrapping="Wrap" Text="ATM Simulator v1.0.0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
